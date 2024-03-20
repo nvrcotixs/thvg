@@ -3,7 +3,7 @@
     <meta charset=utf-8>
     <meta name=viewport content="width=device-width,initial-scale=1">
     <meta name=description content=zeyn • social tab>
-    <title>nvrcotixs</title>
+    <title>nvrcotixs.lol</title>
     <link rel="shortcut icon" href=src/images/favicon.png>
     <link rel=stylesheet href=src/css/style.css>
     <link rel=stylesheet href=src/mouse-animate/main.css>
@@ -29,3 +29,26 @@
 
  <audio loop="true" id="audio" autoplay="" src="assets/music/Elevate.mp3">
     </audio>
+
+    <script>
+        document.addEventListener('click', function () {
+            var audio = document.getElementById('audio');
+            var playButton = document.getElementById('playButton');
+            var clickAnywhere = document.getElementById('clickAnywhere');
+            var mainDiv = document.getElementById('mainDiv');
+
+            clickAnywhere.style.display = 'none';
+            mainDiv.style.display = 'block';
+            audio.play().then(function () {
+                // Audio started playing successfully
+            }).catch(function (error) {
+
+            });
+        });
+
+
+
+    </script>
+
+
+
