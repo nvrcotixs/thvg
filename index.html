@@ -26,25 +26,3 @@
     </div>
     <script src=src/js/jquery-3.6.0.js></script>
     <script src=src/js/loading.js></script>
-   <audio loop="true" id="audio" autoplay="" src="assets/music/Elevate.mp3">
-    </audio>
-    
-    <script>
-        document.addEventListener('click', function () {
-            var audio = document.getElementById('audio');
-            var playButton = document.getElementById('playButton');
-            var clickAnywhere = document.getElementById('clickAnywhere');
-            var mainDiv = document.getElementById('mainDiv');
-
-            clickAnywhere.style.display = 'none';
-            mainDiv.style.display = 'block';
-            audio.play().then(function () {
-                // Audio started playing successfully
-            }).catch(function (error) {
-
-            });
-        });
-
-
-
-    </script> 
