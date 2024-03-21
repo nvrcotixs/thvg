@@ -18,6 +18,25 @@ html {
     z-index: 9999;
 }
 
+.splashscreen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    background-color: #000000;
+    text-align: center;
+    opacity: 99%;
+    transition: opacity 0.3s;
+}
+
+#splashtext{
+    color: white;
+    padding: 0 0 0 0;
+    margin-top: 50vh;
+}
+
 .sf-snow-anim {
     top: 110%;
 }
