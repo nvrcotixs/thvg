@@ -25,7 +25,7 @@ html {
     bottom: 0;
     right: 0;
     overflow: auto;
-    background-color: #35353a;
+    background-color: #000000;
     text-align: center;
     opacity: 99%;
     transition: opacity 0.3s;
