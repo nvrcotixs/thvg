@@ -4,7 +4,7 @@ const splashText = document.getElementById("splashtext");
 const eventSplash = document.getElementById("splashscreen").addEventListener("click", splashScreen);
 
 // Music
-const audio = new Audio("audio/music.mp3");
+const audio = new Audio("src/music/music.mp3");
 
 
 // Splashscreen function
