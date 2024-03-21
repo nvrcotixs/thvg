@@ -12,6 +12,12 @@ html {
     height: 100%
 }
 
+.wrapper{
+    height: 100vh;
+    vertical-align: middle;
+    align-content: center;
+}
+
 .sf-snow-flake {
     position: fixed;
     top: -20px;
