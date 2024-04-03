@@ -125,7 +125,7 @@ html {
     z-index: -1;
     width: calc(100% + var(--border-width) * 2);
     height: calc(100% + var(--border-width) * 2);
-    background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f);
+    background: linear-gradient(60deg, #1b1b1b, #474747, #1b1b1b, #474747, #1b1b1b);
     background-size: 300% 300%;
     border-radius: 12px;
     animation: moveGradient 4s alternate infinite
