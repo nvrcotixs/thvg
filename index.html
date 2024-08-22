@@ -1,0 +1,147 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="nvrcotixs" property="og:title">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/typed.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <style>
+        h1 {
+            font-size: 50px;
+            font-family: derk;
+            text-shadow: 0 0 0.40em #bababa;
+        }
+
+        #typed-text {
+            font-size: 20px;
+            font-family: 'Roboto Mono', monospace;
+            text-shadow: 0 0 0.10em white;
+        }
+    </style>
+</head>
+<body oncontextmenu="false">
+<input type="checkbox" autocomplete="off" id="overlay-toggle">
+<div class="overlay fullscreen">
+    <div id="center">
+        <label for="overlay-toggle" onclick="audioPlay();videoPlay()">
+            <span class="no-hover">CLICK ME</span>
+            <span class="hover">CLICK ME</span>
+        </label>
+    </div>
+</div>
+<audio loop="" preload="auto" id="audio">
+    <source src="media/blackfingernails.mp3" type="audio/mp3">
+</audio>
+<video muted="" loop="" playsinline="" preload="auto" class="fullscreen bg-video" id="video">
+    <source src="media/crazybrother.mp4" type="video/mp4">
+</video>
+<section class="fullscreen text-content">
+<div id="center">
+    <h1>n v r c o t i x s</h1>
+</div>
+<div id="center">
+    <br><br><br><br>
+    <span id="typed-text"></span>
+</div>
+<div class="snowflakes">
+    <div class="snowflake">
+        <img src="images/giphy.gif">
+    </div>
+    <div class="snowflake">
+        <img src="images/giphy.gif">
+    </div>
+    <div class="snowflake">
+        <img src="images/giphy.gif">
+    </div>
+    <div class="snowflake">
+        <img src="images/giphy.gif">
+    </div>
+    <div class="snowflake">
+        <img src="images/giphy.gif">
+    </div>
+    <div class="snowflake">
+        <img src="images/giphy.gif">
+    </div>
+    <div class="snowflake">
+        <img src="images/giphy.gif">
+    </div>
+    <div class="snowflake">
+        <img src="images/giphy.gif">
+    </div>
+    <div class="snowflake">
+        <img src="images/giphy.gif">
+    </div>
+    <div class="snowflake">
+        <img src="images/giphy.gif">
+</div>
+</div>
+</section>
+<div id="socials">
+    <ul>
+        <a href="https://www.roblox.com/users/148546744/profile" target="_blank" rel="noopener noreferrer"><img src="images/roblox.png" alt="Roblox" height="34px"></a>
+        <a href="https://cash.app/$nvrcotixs" target="_blank" rel="noopener noreferrer"><img src="images/cashapp.png" alt="Cashapp" height="32px"></a>
+        <a href="https://discord.gg/XzW7GQUe9S" target="_blank" rel="noopener noreferrer"><img src="images/telegram.png" alt="Telegram" height="30px"></a>
+    </ul>
+</div>
+<script>
+    // Fetch IP address from a third-party service
+    fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {3
+            $.getJSON('https://ipinfo.io/' + data.ip + '/json')
+                .then(location => {
+                    var typed = new Typed('1typed-text', {
+                        strings: [`luxury`, `i  ♡ fraud`, `^_^`, `hows it in ${location.city}, ${location.region} lol`],
+                        typeSpeed: 70,
+                        backSpeed: 50,
+                        loop: true
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching region:', error);
+                });
+        })
+        .catch(error => {
+            console.error('Error fetching IP address:', error);
+        });
+</script>
+<script src="js/main.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/cursortext.js"></script>
+<script src="disable_inspect.html"></script>
+
+
+
+<script>
+    // Disable right-click
+    window.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+        alert('stop skidding');
+    });
+
+    // Disable inspect element
+    document.onkeydown = function (e) {
+        if (e.keyCode == 123) {
+            alert('F12 a dick you faggot');
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            alert('Ctrl Shift I? Control your weight ');
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+            alert('Ctrl Shift C Some Hoes');
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            alert('Ctrl Shift J??');
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            alert('Uh oh, Is that a skidder i see??  ');
+            return false;
+        }
+    }
+</script>
+</body></html>
