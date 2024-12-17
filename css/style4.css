@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+
+* {
+    font-family: 'VCR OSD Mono', sans-serif;
+    color: white
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.wallpaper {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), url(https://tenor.com/view/delusional-ken-carson-opium-gif-3431359714247380511);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+pre {
+    color: #fff;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border: none;
+    font-size: 10px;
+    
+}
+
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box-brrr {
+    width: calc(59% - 20px);
+    border-radius: 2px;
+    background-color: transparent;
+    padding: 20px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.box-contain {
+    display: flex;
+    margin-top: 1em;
+    width: px;
+    text-align: center
+}
+
+.pfp {
+    width: 110px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.text {
+    margin-top: 30px;
+	text-decoration: none;
+	color: #ffffff;
+    text-align: center;
+	font-size: 12px;
+}
+
+.fade-in-image {
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+  }
+  @keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+  }
+
+  
+  @media (max-width: 600px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    .intial-container {
+        margin-top: 1200px;
+
+    }
+    .box-contain {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-brrr {
+        max-width: 200px;
+    }
+    .box-brrr2 {
+        max-width: 200px;
+    }
+    pre {
+        font-size: 14px;
+        overflow-y: auto;
+    }
+    .text {
+        font-size: 8px;
+        margin-bottom: 150px;
+    }
+}
