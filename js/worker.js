@@ -10,7 +10,7 @@
                     $.getJSON("https://api.lanyard.rest/v1/users/" + discord_id, (data) => {
                         data = data.data;
                         if (data.listening_to_spotify) {
-                            $("#spotify").html(`<a class="noAStyle" href="https://open.spotify.com/track/${data.spotify.track_id}"><b>${data.spotify.song}</b>$ \n by <i>${data.spotify.artist}</i></a>`);
+                            $("#spotify").html(`<a class="noAStyle" href="https://open.spotify.com/track/${data.spotify.track_id}"><b>${data.spotify.song}</b> \n by <i>${data.spotify.artist}</i></a>`);
                         } else {
                             $("#spotify").html("Not listening to anything.")
                         }
