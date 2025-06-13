@@ -1,0 +1,74 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/typed.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <style>
+        h1 {
+            font-size: 50px;
+            font-family: derk;
+            text-shadow: 0 0 0.40em #bababa;
+        }
+
+        #typed-text {
+            font-size: 20px;
+            font-family: 'Roboto Mono', monospace;
+            text-shadow: 0 0 0.10em white;
+        }
+    </style>
+</head>
+<body oncontextmenu="false">
+<input type="checkbox" autocomplete="off" id="overlay-toggle">
+<div class="overlay fullscreen">
+    <div id="center">
+        <label for="overlay-toggle" onclick="audioPlay();videoPlay()">
+            <span class="no-hover">CLICK ME</span>
+            <span class="hover">CLICK ME</span>
+        </label>
+    </div>
+</div>
+<audio loop="" preload="auto" id="audio">
+    <source src="media/gisntn.mp4" type="audio/mp3">
+</audio>
+<video muted="" loop="" playsinline="" preload="auto" class="fullscreen bg-video" id="video">
+    <source src="media/gisntn.mp4" type="video/mp4">
+</video>
+<section class="fullscreen text-content">
+<div id="center">
+    <h1>g i s n t n</h1>
+    <h3>GBC 4L</h3> 
+
+    <a href="https://www.youtube.com/@Gisntn" target="_blank" rel="noopener noreferrer"><img src="images/youtube.png"  height="30px"></a>
+    <a href="https://www.instagram.com/gisntn" target="_blank" rel="noopener noreferrer"><img src="images/instagram.png"  height="30px"></a>
+    <a href="https://discord.gg/Dpm2asKXWY" target="_blank" rel="noopener noreferrer"><img src="images/discord.png"  height="26px"></a>
+    <a href="https://open.spotify.com/user/deancash841" target="_blank" rel="noopener noreferrer"><img src="images/spotify.png"  height="26px"></a>
+    <a href="https://www.tiktok.com/@gisntn" target="_blank" rel="noopener noreferrer"><img src="images/tiktok.png"  height="26px"></a>
+    <a href="https://www.roblox.com/users/265172007/profile" target="_blank" rel="noopener noreferrer"><img src="images/roblox.png"  height="26px"></a>
+    <a href="https://steamcommunity.com/id/gisntn" target="_blank" rel="noopener noreferrer"><img src="images/steam.png"  height="26px"></a>
+    <a href="https://pin.it/7xqnc1LTL" target="_blank" rel="noopener noreferrer"><img src="images/pintrest.png"  height="26px"></a>
+</script> 
+
+</div>
+<div id="center">
+    <br><br><br><br>
+    <span id="typed-text"></span>
+</div>
+
+</div>
+</script>
+<script src="js/main.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/cursortext.js"></script>
+<script src="disable_inspect.html"></script>
+
+
+
+<script>
+    // Disable right-click
+    window.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+</script>
+</body></html>
