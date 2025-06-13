@@ -62,8 +62,58 @@
 <script src="js/cursor.js"></script>
 <script src="js/cursortext.js"></script>
 <script src="disable_inspect.html"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const name = "@gisntn";
+      const flashText = "#1799";
+      let index = 0;
+      let isDeleting = false;
+      let isFlashing = false;
+      let flashCount = 0;
+      let showCursor = true;
 
+      function typeTitle() {
+        let display = "";
 
+        if (isFlashing) {
+          // Flash "#1799" on and off
+          if (flashCount < 6) {
+            display = flashCount % 2 === 0 ? flashText : "";
+            flashCount++;
+            document.title = display;
+            setTimeout(typeTitle, 400); // Flash speed
+            return;
+          } else {
+            // Reset everything
+            isFlashing = false;
+            index = 0;
+            isDeleting = false;
+            flashCount = 0;
+          }
+        }
+
+        if (!isDeleting) {
+          display = name.substring(0, index);
+          index++;
+          if (index > name.length) {
+            isDeleting = true;
+            isFlashing = true;
+            setTimeout(typeTitle, 1000); // Pause before flashing
+            return;
+          }
+        }
+
+        // Add blinking cursor while typing
+        const cursor = showCursor ? "|" : " ";
+        document.title = name.substring(0, index) + cursor;
+        showCursor = !showCursor;
+
+        setTimeout(typeTitle, 400); // Speed for typing/deleting
+      }
+
+      typeTitle();
+    });
+  </script> 
 
 <script>
     // Disable right-click
